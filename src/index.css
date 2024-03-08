@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: #35374B;
+}
+
+.background_image{
+    background-image: url('../public/background_scanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_style{
+    font-family: 'Lucida Sans Regular';
+}
+
+.bg_login{
+    background-image: url('../public/auth_form.jpg');
+    background-size: cover;
+}
+
+.admin_background{
+ background-image: url('../public/admin_background.avif');
+ background-size: cover;
+ background-repeat: no-repeat;
+
+}
+
+.attendence_bg{
+    background-image: url('../public/attendence_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: #dbdcef;
+    border-right-color: #474bff;
+    animation: spinner-d3wgkg 1s infinite linear;
+ }
+ 
+ @keyframes spinner-d3wgkg {
+    to {
+       transform: rotate(1turn);
+    }
+ }
+
+@media (max-width:768px) {
+    .background_image{
+        background-image: none !important;
+        /* background-repeat: no-repeat;
+        background-size: contain; */
+        background-color: #35374B !important;
+        width: 100%;
+    
+    }
+}
